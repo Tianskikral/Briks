@@ -106,3 +106,13 @@ canvas {
 #restartBtn:hover {
     background-color: #fff176;
 }
+
+.clickable-area {
+    position: absolute;
+    top: 19%;
+    left: 92%;
+    width: 2vh;
+    height: 2vh;
+    cursor: pointer;
+    z-index: 1;
+}

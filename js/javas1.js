@@ -195,3 +195,23 @@ restartBtn.addEventListener("click", resetGame);
 resetBallAndPaddle();
 initBricks();
 draw();
+
+function credits(){
+    Swal.fire({
+        title: 'Vizitka',
+        text: 'Tian Mermolja 4. Rb, 2024',
+        icon: 'info',
+        confirmButtonText: 'OK',
+    })
+} 
+
+// Onemogoči Ctrl + scroll zoom
+document.addEventListener('wheel', function (e) {
+    if (e.ctrlKey) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+
+
+
