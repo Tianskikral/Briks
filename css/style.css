@@ -1,0 +1,108 @@
+/* Splošni izgled strani */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("../slike/Vesolje.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Naslov igre */
+.naslov {
+    margin-top: 20px;
+    font-size: 56px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 20px #ffd700cc;
+}
+
+/* Glavni vmesnik s točkami in težavnostjo */
+.hud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.scoreText {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+}
+
+/* Gumbi za težavnost */
+.difficulty button {
+    margin: 0 5px;
+    padding: 10px 18px;
+    font-size: 15px;
+    background: linear-gradient(145deg, #ffe600, #ffc400);
+    border: none;
+    border-radius: 12px;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 235, 59, 0.4);
+}
+
+.difficulty button:hover {
+    transform: translateY(-2px);
+    background: #fff176;
+}
+
+/* Glavno igralno polje */
+canvas {
+    background-color: rgba(0, 0, 0, 0.3); /* prosojno, da se vidi ozadje */
+    border: 3px solid #ffeb3b;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(255, 235, 59, 0.4);
+    margin: 20px 0;
+}
+
+/* Meni, ki se pokaže ob koncu igre */
+#gameOverMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    padding: 35px;
+    border: 3px solid #ffeb3b;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 0 30px rgba(255, 235, 59, 0.5);
+}
+
+#gameOverMenu h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ffeb3b80;
+}
+
+/* Gumb za ponovno igranje */
+#restartBtn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #ffeb3b;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#restartBtn:hover {
+    background-color: #fff176;
+}

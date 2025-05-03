@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Briks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/javas1.js"></script>
+</head>
+<body>
+    <h1 class="naslov">Briks</h1>
+    <div class="hud">
+        <span class="scoreText">Točke: <span id="scoreValue">0</span></span>
+        <div class="difficulty">
+            <button class="diffBtn" data-speed="3.5">Lahko</button>
+            <button class="diffBtn" data-speed="5.0">Srednje</button>
+            <button class="diffBtn" data-speed="8.0">Težko</button>
+        </div>
+    </div>
+
+    <canvas id="canva" width="800" height="600"></canvas>
+
+    <div id="gameOverMenu">
+        <h1 id="endText"></h1>
+        <button id="restartBtn">Začni znova</button>
+    </div>
+</body>
+</html>
